@@ -1,0 +1,107 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "hi",
+                "hello",
+                "hey",
+                "good morning",
+                "good evening",
+                "start travel bot",
+                "need travel help",
+                "can you help me"
+            ],
+            "responses": [
+                "Hello! I am TravelBot. I can help you plan trips, choose destinations, pack smartly, and travel safely.",
+                "Welcome! Let me know how I can assist with your travel planning today."
+            ]
+        },
+        {
+            "tag": "plan_tour",
+            "patterns": [
+                "plan a tour",
+                "help me plan a trip",
+                "make a travel plan",
+                "create itinerary",
+                "tour planning",
+                "vacation planning"
+            ],
+            "responses": [
+                "Sure. Please tell me your travel type (solo/family), budget, and preferred destination type.",
+                "I can help plan your tour. Share your budget and travel duration."
+            ]
+        },
+        {
+            "tag": "destination",
+            "patterns": [
+                "suggest destination",
+                "where should I go",
+                "best place to travel",
+                "tourist place",
+                "mountain or beach",
+                "city tour"
+            ],
+            "responses": [
+                "I can suggest destinations based on budget, season, and interests.",
+                "Tell me if you prefer mountains, beaches, or city experiences."
+            ]
+        },
+        {
+            "tag": "budget",
+            "patterns": [
+                "low budget travel",
+                "cheap trip",
+                "budget tour",
+                "travel under budget",
+                "affordable travel"
+            ],
+            "responses": [
+                "Budget travel is best with off-season planning, local transport, and budget hotels.",
+                "I can suggest destinations and tips to keep your travel costs low."
+            ]
+        },
+        {
+            "tag": "packing",
+            "patterns": [
+                "what to pack",
+                "packing list",
+                "things to carry",
+                "travel essentials",
+                "what should I bring"
+            ],
+            "responses": [
+                "Packing depends on destination, climate, and trip length. I can give a checklist.",
+                "Let me know your travel type and destination to suggest packing items."
+            ]
+        },
+        {
+            "tag": "guidelines",
+            "patterns": [
+                "travel tips",
+                "travel guidelines",
+                "safety tips",
+                "travel advice",
+                "tour precautions"
+            ],
+            "responses": [
+                "Always keep documents safe, stay aware of local laws, and maintain health precautions.",
+                "Travel insurance and emergency contacts are strongly recommended."
+            ]
+        },
+        {
+            "tag": "exit",
+            "patterns": [
+                "bye",
+                "exit",
+                "quit",
+                "goodbye",
+                "thanks"
+            ],
+            "responses": [
+                "Thank you for using TravelBot. Safe travels!",
+                "Goodbye. Wishing you a pleasant journey ahead."
+            ]
+        }
+    ]
+}
