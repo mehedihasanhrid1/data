@@ -4,6 +4,7 @@ STOP_WORDS = {
     "my", "your", "of", "before", "after", "some", "any"
 }
 
+
 def destination_help():
     return (
         "Destination Suggestions:\n"
@@ -11,7 +12,6 @@ def destination_help():
         "- Nature: Bhutan, Switzerland, Kashmir\n"
         "- City: Dubai, Singapore, Bangkok"
     )
-
 
 def packing_help():
     return (
@@ -41,3 +41,16 @@ def guideline_help():
         "- Carry insurance\n"
         "- Stay aware of surroundings"
     )
+
+def normalize(text):
+    text = text.lower()
+    text = re.sub(r"[^a-z\s]", "", text)
+    tokens = text.split()
+    tokens = [t for t in tokens if t not in STOP_WORDS]
+    return tokens
+
+def stem(word):
+    for suffix in ["ing", "ed", "s"]:
+        if word.endswith(suffix) and len(word) > 4:
+            return word[:-len(suffix)]
+    return word
