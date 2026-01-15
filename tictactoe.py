@@ -52,3 +52,57 @@ def ai_move(board, ai_symbol, player_symbol):
 
     available_positions = [index for index in range(9) if board[index].isdigit()]
     board[random.choice(available_positions)] = ai_symbol
+
+def player_move(board, player_symbol):
+    while True:
+        try:
+            move = int(input(Fore.GREEN + "Enter move (1-9): "))
+            if move not in range(1, 10):
+                print(Fore.RED + "Invalid input. Please choose a number between 1 and 9.")
+            elif not board[move - 1].isdigit():
+                print(Fore.RED + "This position is already taken. Please choose another.")
+            else:
+                board[move - 1] = player_symbol
+                break
+        except ValueError:
+            print(Fore.RED + "Invalid input. Please enter a numeric value.")
+
+def tic_tac_toe():
+    print(Fore.MAGENTA + Style.BRIGHT + "Tic-Tac-Toe Game")
+
+    while True:
+        board = [str(index) for index in range(1, 10)]
+        player_symbol = 'X'
+        ai_symbol = 'O'
+        current_turn = 'Player'
+
+        while True:
+            display_board(board)
+
+            if current_turn == 'Player':
+                player_move(board, player_symbol)
+                if check_win(board, player_symbol):
+                    display_board(board)
+                    print(Fore.GREEN + "Player wins!")
+                    break
+                current_turn = 'AI'
+            else:
+                ai_move(board, ai_symbol, player_symbol)
+                if check_win(board, ai_symbol):
+                    display_board(board)
+                    print(Fore.RED + "AI wins!")
+                    break
+                current_turn = 'Player'
+
+            if check_full(board):
+                display_board(board)
+                print(Fore.YELLOW + "It's a tie!")
+                break
+
+        play_again = input(Fore.CYAN + "Do you want to play again? (yes/no): ").strip().lower()
+        if play_again != 'yes':
+            print(Fore.MAGENTA + "Thank you for playing!")
+            break
+
+if __name__ == "__main__":
+    tic_tac_toe()
