@@ -1,0 +1,51 @@
+1|Python Basics|John Smith|2019|Available
+2|Advanced Python|Jane Doe|2021|Available
+3|Data Science 101|Mark Lee|2020|Available
+4|Machine Learning|Andrew Ng|2018|Available
+5|AI Foundations|Sarah Kim|2022|Available
+6|Django Web|Tom Hardy|2019|Available
+7|Flask Essentials|Robert Fox|2020|Available
+8|NumPy Guide|Anna White|2021|Available
+9|Pandas Deep Dive|Chris Brown|2022|Available
+10|Algorithms|CLRS|2015|Available
+11|Data Structures|Seymour Lipschutz|2016|Available
+12|Clean Code|Robert Martin|2014|Available
+13|Design Patterns|GoF|2013|Available
+14|Operating Systems|Silberschatz|2017|Available
+15|Computer Networks|Tanenbaum|2018|Available
+16|Databases|Elmasri|2019|Available
+17|SQL Mastery|Alan Beaulieu|2020|Available
+18|NoSQL Basics|Eric Evans|2021|Available
+19|Java Fundamentals|James Gosling|2016|Available
+20|C Programming|Dennis Ritchie|2012|Available
+21|C++ Primer|Stanley Lippman|2015|Available
+22|JavaScript Core|Douglas Crockford|2014|Available
+23|Web Design|Jon Duckett|2019|Available
+24|HTML & CSS|Jon Duckett|2018|Available
+25|React Explained|Zac Gordon|2021|Available
+26|Node.js Guide|Mario Casciaro|2020|Available
+27|Linux Basics|William Shotts|2017|Available
+28|Shell Scripting|Arnold Robbins|2016|Available
+29|Cyber Security|Bruce Schneier|2019|Available
+30|Ethical Hacking|Kevin Mitnick|2020|Available
+31|Cloud Computing|Rajkumar Buyya|2021|Available
+32|AWS Handbook|Ben Piper|2022|Available
+33|DevOps Guide|Jez Humble|2018|Available
+34|Agile Principles|Robert Martin|2016|Available
+35|Scrum Basics|Ken Schwaber|2017|Available
+36|Software Testing|Glenford Myers|2015|Available
+37|QA Automation|Mark Winteringham|2021|Available
+38|Game Development|Jesse Schell|2014|Available
+39|Unity Guide|Alan Thorn|2019|Available
+40|Unreal Engine|Tim Sweeney|2020|Available
+41|Mobile App Dev|Mark Murphy|2018|Available
+42|Android Studio|Google Team|2021|Available
+43|iOS Programming|Apple Inc|2020|Available
+44|Kotlin in Action|Dmitry Jemerov|2019|Available
+45|Swift Essentials|Chris Lattner|2018|Available
+46|Blockchain Basics|Don Tapscott|2017|Available
+47|Crypto Economy|Paul Vigna|2021|Available
+48|IoT Systems|Adrian McEwen|2019|Available
+49|Embedded Systems|Michael Barr|2016|Available
+50|Robotics Intro|John Craig|2022|Available
+
