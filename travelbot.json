@@ -1,76 +1,148 @@
 {
-  "intents": [
-    {
-      "tag": "greeting",
-      "keywords": ["hello", "hi", "hey", "start"],
-      "responses": [
-        "Hello! I am TravelBot. How may I assist you with your travel plans today?",
-        "Welcome! I can help you plan trips, pack smartly, and travel safely."
-      ]
+    "bot": {
+        "name": "TravelBot",
+        "language": "en",
+        "followup": "Would you like help with destinations, packing, budget planning, or safety tips?",
+        "fallback": {
+            "responses": [
+                "I can assist you with trip planning, destinations, packing, budgets, and safety tips. What would you like to explore?"
+            ]
+        }
     },
-    {
-      "tag": "plan_tour",
-      "keywords": ["plan", "planning", "trip", "tour", "itinerary", "schedule"],
-      "responses": [
-        "I can help you plan a tour. Please share your budget, duration, and travel type.",
-        "Let’s plan your trip. Are you traveling solo, with family, or friends?"
-      ]
-    },
-    {
-      "tag": "destination",
-      "keywords": ["destination", "place", "go", "visit", "location"],
-      "responses": [
-        "I can recommend destinations based on budget, season, and interests.",
-        "Tell me if you prefer mountains, beaches, or city experiences."
-      ]
-    },
-    {
-      "tag": "budget",
-      "keywords": ["budget", "cheap", "lowcost", "affordable", "save"],
-      "responses": [
-        "Budget travel works best with off-season trips and local transport.",
-        "I can help you travel economically without compromising experience."
-      ]
-    },
-    {
-      "tag": "packing",
-      "keywords": ["pack", "packing", "luggage", "bag", "carry"],
-      "responses": [
-        "Packing depends on destination and duration. I can provide a checklist.",
-        "I will help you pack smartly. Tell me about your trip."
-      ]
-    },
-    {
-      "tag": "guidelines",
-      "keywords": ["guide", "guidelines", "tips", "advice", "safety"],
-      "responses": [
-        "Always keep documents safe, respect local laws, and stay alert.",
-        "Travel insurance and emergency contacts are highly recommended."
-      ]
-    },
-    {
-      "tag": "solo",
-      "keywords": ["solo", "alone", "single"],
-      "responses": [
-        "Solo travel is enriching. Choose safe destinations and stay connected.",
-        "I can guide you on safe and enjoyable solo travel."
-      ]
-    },
-    {
-      "tag": "family",
-      "keywords": ["family", "kids", "children"],
-      "responses": [
-        "Family trips need comfort and safety planning.",
-        "I can suggest family-friendly destinations and packing tips."
-      ]
-    },
-    {
-      "tag": "exit",
-      "keywords": ["bye", "exit", "quit", "thanks"],
-      "responses": [
-        "Thank you for using TravelBot. Safe travels!",
-        "Goodbye. Have a pleasant journey ahead."
-      ]
-    }
-  ]
+    "intents": [
+        {
+            "tag": "greeting",
+            "keywords": [
+                "hello",
+                "hi",
+                "hey",
+                "start"
+            ],
+            "responses": [
+                "Hello! I am your smart travel guide. How can I assist you today?"
+            ]
+        },
+        {
+            "tag": "plan",
+            "keywords": [
+                "plan",
+                "trip",
+                "tour",
+                "travel"
+            ],
+            "responses": [
+                "Great! Are you planning a solo trip, family trip, or group tour?"
+            ],
+            "next_expected": "travel_type"
+        },
+        {
+            "tag": "travel_type",
+            "keywords": [
+                "solo",
+                "family",
+                "group"
+            ],
+            "responses": [
+                "Excellent choice! What would you like help with — destinations, packing, budget, or safety tips?"
+            ]
+        },
+        {
+            "tag": "destination",
+            "keywords": [
+                "destination",
+                "destinations",
+                "place",
+                "visit",
+                "where"
+            ],
+            "responses": [
+                "Here are some popular travel destinations:"
+            ],
+            "data": {
+                "Budget Friendly": [
+                    "Cox’s Bazar",
+                    "Darjeeling",
+                    "Pokhara"
+                ],
+                "Nature & Adventure": [
+                    "Nepal",
+                    "Bhutan",
+                    "Kashmir"
+                ],
+                "City Life": [
+                    "Dubai",
+                    "Singapore",
+                    "Bangkok"
+                ]
+            }
+        },
+        {
+            "tag": "packing",
+            "keywords": [
+                "pack",
+                "packing",
+                "luggage",
+                "bag"
+            ],
+            "responses": [
+                "Here is your smart packing checklist:"
+            ],
+            "data": [
+                "Travel documents",
+                "Clothes",
+                "Toiletries",
+                "Medicines",
+                "Power bank & charger",
+                "Emergency cash"
+            ]
+        },
+        {
+            "tag": "budget",
+            "keywords": [
+                "budget",
+                "cheap",
+                "lowcost",
+                "affordable"
+            ],
+            "responses": [
+                "Here are some cost-saving travel tips:"
+            ],
+            "data": [
+                "Travel off-season",
+                "Use public transport",
+                "Stay in budget hotels",
+                "Book early"
+            ]
+        },
+        {
+            "tag": "safety",
+            "keywords": [
+                "safe",
+                "safety",
+                "tips",
+                "guide"
+            ],
+            "responses": [
+                "Follow these essential travel safety guidelines:"
+            ],
+            "data": [
+                "Secure your documents",
+                "Carry insurance",
+                "Avoid unsafe areas at night",
+                "Keep emergency contacts"
+            ]
+        },
+        {
+            "tag": "exit",
+            "keywords": [
+                "bye",
+                "exit",
+                "quit",
+                "thanks"
+            ],
+            "responses": [
+                "Thank you for using TravelBot. Have a wonderful journey!"
+            ]
+        }
+    ]
 }
